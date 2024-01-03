@@ -33,7 +33,18 @@
             "url": "https://github.com/personalimuno/docker-stack",
             "stackfile": "compose/npm-compose.yml"
         }
+    },
+    {
+        "type": 2,
+        "title": "Redis",
+        "description": "Open-source in-memory data structure store",
+        "categories": ["database"],
+        "platform": "linux",
+        "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/redis.png",
+        "repository": {
+            "url": "https://github.com/personalimuno/docker-stack",
+            "stackfile": "compose/redis-compose.yml"
+        }
     }
-
 ]
 }
