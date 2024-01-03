@@ -11,8 +11,6 @@ services:
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
       MYSQL_PASSWORD: wordpress
-    networks:
-      - default
 
   app:
     image: wordpress:latest
@@ -21,15 +19,6 @@ services:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
-    networks:
-      - network
-      - default
     
-
 volumes:
     db_data:
-
-networks:
-  network:
-    name: web-proxy_default
-    external: true
