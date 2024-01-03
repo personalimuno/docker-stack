@@ -45,5 +45,6 @@
             "url": "https://github.com/personalimuno/docker-stack",
             "stackfile": "compose/redis-compose.yml"
         }
+    }
 ]
 }
