@@ -1,0 +1,21 @@
+version: "3"
+services:
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: always
+    ports:
+      - '80:80'
+      - '443:443'
+      - '81:81'
+    environment:
+      HOSTNAME: 'npm-proxy'
+    volumes:
+      - data:/data
+      - letsencrypt:/etc/letsencrypt
+    deploy:
+      mode: replicated
+      replicas: 3
+
+volumes:
+  data: {}
+  letsencrypt: {}

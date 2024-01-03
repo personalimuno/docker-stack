@@ -1,0 +1,43 @@
+{
+    "version": "2",
+    "templates": [
+    {
+        "type": 3,
+        "title": "WordPress",
+        "description": "WordPress setup with a MySQL database",
+        "note": "Deploys a WordPress instance connected to a MySQL database.",
+        "categories": ["CMS"],
+        "platform": "linux",
+        "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
+        "repository": {
+            "url": "https://github.com/portainer/templates",
+            "stackfile": "stacks/wordpress/docker-compose.yml"
+        },
+        "env": [
+        {
+            "name": "MYSQL_DATABASE_PASSWORD",
+            "label": "Database root password",
+            "description": "Password used by the MySQL root user."
+        },
+        {
+            "nama": "HOSTNAME",
+            "label": "Hostname",
+            "description": "It is important for proxy server"
+        }
+        ]
+    },
+    {
+        "type": 3,
+        "title": "Nginx Proxy Manager",
+        "description": "Nginx Proxy Manager is a web-based tool to acquire SSL certification automatically that make your website saver",
+        "note": "",
+        "category": ["Internet"],
+        "platform": "linux",
+        "logo": "https://d11a6trkgmumsb.cloudfront.net/original/3X/d/f/df1bc401d06dfc8ee0a6a51569db493aabd47c98.png",
+        "repository": {
+            "url": "https://github.com/personalimuno/docker-stack",
+            "stackfile": "compose/npm-compose.yml"
+        }
+    }
+]
+}
