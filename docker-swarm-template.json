@@ -33,7 +33,7 @@
             "url": "https://github.com/personalimuno/docker-stack",
             "stackfile": "compose/npm-compose.yml"
         }
-    },
+    }
 
 ]
 }
