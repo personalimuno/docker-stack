@@ -27,7 +27,7 @@
         ]
     },
     {
-        "type": 3,
+        "type": 2,
         "title": "Nginx Proxy Manager",
         "description": "Nginx Proxy Manager is a web-based tool to acquire SSL certification automatically that make your website saver",
         "note": "",
