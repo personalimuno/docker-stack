@@ -26,13 +26,24 @@
         "title": "Nginx Proxy Manager",
         "description": "Nginx Proxy Manager is a web-based tool to acquire SSL certification automatically that make your website saver",
         "note": "",
-        "category": ["TOOLS"],
+        "categories": ["Tools"],
         "platform": "linux",
         "logo": "https://d11a6trkgmumsb.cloudfront.net/original/3X/d/f/df1bc401d06dfc8ee0a6a51569db493aabd47c98.png",
         "repository": {
             "url": "https://github.com/personalimuno/docker-stack",
             "stackfile": "compose/npm-compose.yml"
         }
-    }
+    },
+    {
+        "type": 2,
+        "title": "Redis",
+        "description": "Open-source in-memory data structure store",
+        "categories": ["database"],
+        "platform": "linux",
+        "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/redis.png",
+        "repository": {
+            "url": "https://github.com/personalimuno/docker-stack",
+            "stackfile": "compose/redis-compose.yml"
+        }
 ]
 }
