@@ -10,9 +10,6 @@ services:
     volumes:
       - data:/data
       - letsencrypt:/etc/letsencrypt
-    deploy:
-      mode: replicated
-      replicas: 1
 
 volumes:
   data: {}
